@@ -2,7 +2,7 @@ import streamlit as st
 import spacy_streamlit
 from spacy.language import Language
 
-models = ["en_ushmm_rules","ushmm_sm"]
+models = ["en_ushmm_rules"]
 
 default_text = '''
 I would bring it home at night so we had it.
@@ -57,5 +57,5 @@ If she would have -- we walked out and somebody said to us, someone who knew us 
 He said, that's silly, they'll find them.
 They'll kill them.
 '''
-visualizers = ['find_ships', 'find_ghettos', 'find_people', 'find_spousal', 'find_camps_strict', 'find_groups', 'find_places', 'find_geography']
+visualizers = ['ner']
 spacy_streamlit.visualize(models, default_text, visualizers=visualizers)
