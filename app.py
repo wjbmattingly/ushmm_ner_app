@@ -2,7 +2,7 @@ import streamlit as st
 import spacy_streamlit
 from spacy.language import Language
 
-models = ["ushmm_sm"]
+models = ["en_ushmm_rules","ushmm_sm"]
 
 default_text = '''
 I would bring it home at night so we had it.
