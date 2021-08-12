@@ -57,5 +57,5 @@ If she would have -- we walked out and somebody said to us, someone who knew us 
 He said, that's silly, they'll find them.
 They'll kill them.
 '''
-visualizers = ['ner', "finding_ships"]
+visualizers = ['find_ships', 'find_ghettos', 'find_people', 'find_spousal', 'find_camps_strict', 'find_groups', 'find_places', 'find_geography', 'ner']
 spacy_streamlit.visualize(models, default_text, visualizers=visualizers)
